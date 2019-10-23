@@ -5,5 +5,6 @@ import sys
 if sys.stdin.isatty():
     sys.exit()
 else:
-    clipboard.copy(sys.stdin.read().strip())
-    
+    inp=sys.stdin.read().strip()
+    clipboard.copy(inp)
+print(inp)
